@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Kiểm tra từ đối xứng</title>
+</head>
+<body>
+<script>
+    let input = prompt();
+    function isPalindrom(){
+        let n = input.length - 1;
+        for(let i = 0; i < n; i++){
+            if(input[i]===input[n-i]){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    }
+    if(isPalindrom()){
+        alert("Từ đối xứng!");
+    }else{
+        alert("Từ không đối xứng!");
+    }
+</script>
+</body>
+</html>
